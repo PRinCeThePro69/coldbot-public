@@ -1,0 +1,52 @@
+{
+  "BOT_OWNERS_ONLY": {
+    "english": "This command can only be ran by the bot developers."
+  },
+  "MISSING_PERMISSION": {
+    "english": "You must have the `{PERM}` permission in order to use this command."
+  },
+
+  "UNKNOWN_COMMAND": {
+    "english": "Could not find command: `{COMMAND}`. This must be an error on the developers' end."
+  },
+  "CURRENT_PREFIX": {
+    "english": "The current prefix of the bot in this server is `{PREFIX}`."
+  },
+  "SET_PREFIX": {
+    "english": "Set the bot's prefix of this server to `{PREFIX}`."
+  },
+
+  "SYNTAX_ERROR": {
+    "english": "Incorrect usage! Please use `{PREFIX}{COMMAND} {ARGUMENTS}`"
+  },
+  "NO_DATABASE_FOUND": {
+    "english": "An unexpected database error occured. We hope for it to get fixed soon!"
+  },
+  "GUILD_ONLY_COMMAND": {
+    "english": "This command can only be used within a server."
+  },
+  "NO_REACT_PERMS": {
+    "english": "This bot needs the `ADD_REACTIONS` permission to use the help menu."
+  },
+  "EXCEPTION": {
+    "english": "An error occurred when running this command! This error has been reported to the developers."
+  },
+  "NO_TAGGED_CHANNELS": {
+    "english": "Please mention at least one channel."
+  },
+  "NOT_CHANNEL_COMMAND": {
+    "english": "That command is currently not limited to any channel."
+  }, 
+
+  "INVALID_SLASH_COMMAND": {
+    "english": "This slash command is not properly registered.",
+    "spanish": "Este comando de barra no está registrado correctamente.",
+    "portuguese": "Este comando de barra não está registrado corretamente.",
+    "russian": "Эта команда косой черты не зарегистрирована должным образом.",
+    "german": "Dieser Schrägstrichbefehl ist nicht richtig registriert.",
+    "dutch": "Deze slash-opdracht is niet correct geregistreerd.",
+    "french": "Cette commande slash n'est pas correctement enregistrée."
+  }
+
+  
+}
