@@ -11,11 +11,12 @@ module.exports = {
     .setColor('RANDOM')
     .setTitle('Help Menu')
     .setDescription('Displays all the commands of the bot.')
-    .addField('Information Commands', '`invite`, `help`')
-    .addField('Economy Commands', '`balance`, `beg`, `daily`, `share`')
+    .addField('Information Commands', '`invite`, `help`, `psa`')
+    .addField('Economy Commands', '`balance`, `beg`, `daily`, `share`, `doubleornothing`, `passive`')
     .addField('Fun Commands', '`cat`, `dog`, `rory`, `woody`')
     .addField('Giveaway Commands', '`giveaway-start`, `giveaway-end`, `giveaway-reroll`')
       .addField('Moderation Commands', '`ban`, `kick`')
+	  .addField('Setup commands', '`prefix`')
     .setTimestamp()
 
     msg.channel.send(
