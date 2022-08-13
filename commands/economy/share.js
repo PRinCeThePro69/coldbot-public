@@ -15,6 +15,10 @@ module.exports = {
 	  if(args.length == 0 || !target || isNaN(args[1])) {
 		  message.reply("Your arguments are invalid")
 	  } else {
+		  // passive check
+		  if(await db.get(`${message.author.id}_passive`) == true || await db.get(`${target.id}_passive`) == true) {
+			  message.reply(":x: One of you is passive")
+		  } else {
 		  const amount = parseInt(args[1])
    //hold up, do you even have the money?!
 	  if(await db.get(`${message.author.id}_bal`) <= amount) {
@@ -31,5 +35,6 @@ module.exports = {
 		  message.reply({embeds:[yesmate]}) //pog they are informed
 	  }
   }
-},
+}
+}
 }
