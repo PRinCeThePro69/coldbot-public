@@ -9,14 +9,16 @@ module.exports = {
   description: 'Bet some money - you either double it or lose it all', // Required for slash commands
   
   slash: false, // Create both a slash and legacy command
-  testOnly: true, // Only register a slash command for the testing guilds
-  expectedArgs: '<user> <amount>',
+  expectedArgs: '<amount>',
   minArgs: 1,
   maxArgs: 1,
   callback: async({ message, args }) => {
+	  console.log("recieved")
 	  if(!args.length == 1 || !args[0] || isNaN(args[0])) {
 		  message.reply("Your arguments are invalid")
 	  } else {
+		  if(await db.get(`${message.author.id}_bal`) < args[0]) { message.reply("you cant gamble what you aint got ") } else {
+		  console.log("valid")
 		  const amount = args[0]
 		  const winnings = amount * 2
 		  await(db.sub(`${message.author.id}_bal`, amount))
@@ -41,4 +43,5 @@ module.exports = {
 		  
 	  }
   }
+}
 }
